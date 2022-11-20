@@ -1,0 +1,35 @@
+GET http://localhost:4000/api/v1/cars
+
+###
+
+GET http://localhost:4000/api/v1/cars/63686688f0094a36504b4c84
+
+###
+
+POST http://localhost:4000/api/v1/cars
+Content-Type: application/json
+
+{
+    "make": "Ford",
+    "model": "F150",
+    "year": "2020",
+    "color": "Red",
+    "type": "Truck"
+}
+
+###
+
+DELETE http://localhost:4000/api/v1/cars/63686688f0094a36504b4c84
+
+###
+
+PATCH  http://localhost:4000/api/v1/cars/636865b2306bb033e3b791ac
+Content-Type: application/json
+
+{
+    "make": "Ford",
+    "model": "Explorer",
+    "year": "2020",
+    "color": "Green",
+    "type": "SUV"
+}
